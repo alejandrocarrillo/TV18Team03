@@ -19,7 +19,8 @@ Using Unity & Google VR SDK we are going to develop an interactive experience wh
 ## Team
 Our team is made up by 8 Computer Systems Engineering, and 7 Animation & Digital Arts Students
 
-
 ![Tec](http://78.media.tumblr.com/avatar_96bcc4dafbf5_128.png "Tec de Monterrey")
+
 ![Google](https://lh3.googleusercontent.com/kroer1kpwSe3j-lIfPnE7Q3MVaCoJVF8atjdh0VtGDWCz2ulLejVsDh2k6a6VUgpUFQ8qRMHMEX7bsr2jTrLXhZR_ETbqILDf-qfkk0=h128 "Google")
+
 ![Wizeline](https://crunchbase-production-res.cloudinary.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397755025/5669db125976663f9f81293fac2b0142.png "Wizeline")
