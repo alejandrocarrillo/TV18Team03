@@ -3,7 +3,9 @@ This repository is used for a development of a VR experience using Unity 2017.3 
 
 ## Objective
 The project is called Taller Vertical, and it is an activity sponsored by Google & powered by Wizeline. Moreover, it is hosted at Tec de Monterrey Campus Guadalajara in Mexico. The task is to develop in one week "something" using Virtual Reality or Augmented Reality focusing on one of the 17 UN Sustainable Development Goals.
-![Tec|128x128](http://78.media.tumblr.com/avatar_96bcc4dafbf5_128.png "Tec de Monterrey")![Google|128x128](https://lh3.googleusercontent.com/kroer1kpwSe3j-lIfPnE7Q3MVaCoJVF8atjdh0VtGDWCz2ulLejVsDh2k6a6VUgpUFQ8qRMHMEX7bsr2jTrLXhZR_ETbqILDf-qfkk0=h128 "Google")![Wizeline|128x128](https://martechexec.com/media/cache/main_image/custom/domain_1/image_files/photo_34630.png "Wizeline")
+
+
+![Tec](http://78.media.tumblr.com/avatar_96bcc4dafbf5_128.png "Tec de Monterrey")![Google](https://lh3.googleusercontent.com/kroer1kpwSe3j-lIfPnE7Q3MVaCoJVF8atjdh0VtGDWCz2ulLejVsDh2k6a6VUgpUFQ8qRMHMEX7bsr2jTrLXhZR_ETbqILDf-qfkk0=h128 "Google")![Wizeline](https://martechexec.com/media/cache/main_image/custom/domain_1/image_files/photo_34630.png "Wizeline")
 
 ## Sustainable Development Goal To Focus On
 
