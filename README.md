@@ -16,11 +16,36 @@ In signing Agenda 2030, governments around the world committed to ending poverty
 
 Using Unity & Google VR SDK we are going to develop an interactive experience where the user dives into an immersive low-poly universe. The user has to survive just like people in extreme poverty conditions do. There is a narrator that guides you into your adventure, but be careful, as there are dangerous places where you might be stalked, and attacked. This experience tries to make people aware on the living conditions that people in extreme poverty face every day. Survive your way to your humble home, and take whatever resources you can gather for yourself or for other members of your family.
 
+### How to initialize a project With Unity 2017.3 & Google VR SDK 1.120
+
+- Download .unitypackage of Google VR SDK 1.120 from [GoogleVR](https://github.com/googlevr/gvr-unity-sdk) and import them into Unity project. 
+- Open Unity>File>Build Settings and Select Android from the Platforms list. Click Switch Platform button.
+- Open Player Settings from Build Settings, and open Other Settings. Change the package name to something not generic, and choose your minimum Android API.
+- Open XR Settings in Player Settings, and enable Virtual Reality Supported. Add Cardboard SDK, or whatever device SDK you are willing to.
+- Make sure that you specified your Android SDK, and Java JDK in Edit>Preferences>External Tools
+- Your Main Camera is now VR usable, go ahead and attach the camera to an Empty Object called Player.
+- Add a GvrReticlePointer as a child of your MainCamera.
+- Add GvrEditorEmulator, and GvrEventSystem to your scene.
+- You are now good to go.
+
 ## Team
-Our team is made up by 8 Computer Systems Engineering, and 7 Animation & Digital Arts Students
+Our team is made up by 9 Computer Systems Engineering, and 7 Animation & Digital Arts Students
 
-![Tec](http://78.media.tumblr.com/avatar_96bcc4dafbf5_128.png "Tec de Monterrey")
+#### Computer Systems Engineers:
+- Michelle Sagnelli
+- Edgar Briceño
+- Alejandro Carrillo
+- Robert Morales
+- Alejandro Sánchez
+- Iván Moret
+- Esaú Preciado
+- Andrés Salas
+- Juan Torres
 
-![Google](https://lh3.googleusercontent.com/kroer1kpwSe3j-lIfPnE7Q3MVaCoJVF8atjdh0VtGDWCz2ulLejVsDh2k6a6VUgpUFQ8qRMHMEX7bsr2jTrLXhZR_ETbqILDf-qfkk0=h128 "Google")
-
-![Wizeline](https://crunchbase-production-res.cloudinary.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1397755025/5669db125976663f9f81293fac2b0142.png "Wizeline")
+#### Animation & Digital Arts Students:
+- Abigail Sáenz
+- Roberto Aramburu
+- Pablo Cárdenas
+- Nereida Citlali
+- Hugo Quintero
+- Mel Sánchez
