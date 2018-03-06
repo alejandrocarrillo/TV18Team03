@@ -6,9 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	Rigidbody rb;
 	private bool walking;
-	float speed,
-		  timeCount,
-		  animSeconds;
+	float speed;
 
 	// Use this for initialization
 	void Start () {
