@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-	Rigidbody rb;
+	private Rigidbody rb;
 	private bool walking;
-	float speed;
+	private float speed;
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
+
 		this.walking = false;
+
 		this.speed = 50.0f;
 	}
 	
@@ -32,6 +34,4 @@ public class PlayerMovement : MonoBehaviour {
 	public void setWalkingFalse(){
 		this.walking = false;
 	}
-
-
 }
