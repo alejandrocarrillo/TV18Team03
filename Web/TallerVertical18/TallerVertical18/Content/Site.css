@@ -24,6 +24,7 @@ textarea {
     max-width: 280px;
 }
 
+
 /* Main title font*/
 h1{
     font-family:Georgia;
@@ -47,4 +48,9 @@ h1{
     font-family: Garamond;
     font-size: 18px;
     padding:20px 0px 0px 0px;
+
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
 }
