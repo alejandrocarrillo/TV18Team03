@@ -28,6 +28,10 @@ Using Unity & Google VR SDK we are going to develop an interactive experience wh
 - Add GvrEditorEmulator, and GvrEventSystem to your scene.
 - You are now good to go.
 
+## Audio
+
+To avoid uploading .wav files to the Git repository, they are added to the .gitignore file. If .wav file are requested please, ask for them.
+
 ## Team
 Our team is made up by 9 Computer Systems Engineering, and 7 Animation & Digital Arts Students
 
