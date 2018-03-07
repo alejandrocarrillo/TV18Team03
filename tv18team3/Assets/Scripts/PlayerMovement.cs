@@ -7,10 +7,13 @@ public class PlayerMovement : MonoBehaviour {
 	private Rigidbody rb;
 	private bool walking;
 	private float speed;
+	private AudioSource footsteps;
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody> ();
+		this.rb = GetComponent<Rigidbody> ();
+
+		this.footsteps = GetComponent<AudioSource> ();
 
 		this.walking = false;
 
@@ -27,11 +30,13 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	// Setter for walking capability
-	public void setWalkingTrue(){
+	public void isWalking(){
 		this.walking = true;
+		this.footsteps.Play ();
 	}
 
-	public void setWalkingFalse(){
+	public void isNotWalking(){
 		this.walking = false;
+		this.footsteps.Pause ();
 	}
 }
