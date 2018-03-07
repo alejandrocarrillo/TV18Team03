@@ -444,14 +444,14 @@ RectTransform:
   m_GameObject: {fileID: 382839280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.05, y: 0.102, z: 1}
   m_Children: []
   m_Father: {fileID: 705236079}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: -220}
+  m_AnchoredPosition: {x: 5, y: -40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382839282
@@ -573,14 +573,14 @@ RectTransform:
   m_GameObject: {fileID: 572497346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.102, z: 1}
   m_Children: []
   m_Father: {fileID: 705236079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30, y: -220}
+  m_AnchoredPosition: {x: -5, y: -40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572497348
@@ -698,7 +698,7 @@ Canvas:
   m_GameObject: {fileID: 705236075}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 69541673}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -717,19 +717,19 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 705236075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.38}
+  m_LocalScale: {x: 0.0092, y: 0.0045, z: 0.001}
   m_Children:
   - {fileID: 572497347}
   - {fileID: 382839281}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1636463486}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874072588 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114281749090586982, guid: 9b8c536a6877d4c439d2759dd6595170,
@@ -1490,6 +1490,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b8c536a6877d4c439d2759dd6595170, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1636463486 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4625033081518472, guid: 9b8c536a6877d4c439d2759dd6595170,
+    type: 2}
+  m_PrefabInternal: {fileID: 1636463485}
 --- !u!1 &1726430975
 GameObject:
   m_ObjectHideFlags: 0
