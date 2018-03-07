@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: #C4C3C3;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,29 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/* Main title font*/
+h1{
+    font-family:Georgia;
+}
+
+/* Primary text inside of the jumbotron*/
+.lead {
+    font-family: Georgia;
+    padding:20px 0px 0px 0px;
+}
+
+
+/* Style of the quotes at the end of the webpage*/
+.quote1 {
+    font-family: Garamond;
+    font-size: 18px;
+    padding: 20px 0px 0px 0px;
+}
+
+.quote2{
+    font-family: Garamond;
+    font-size: 18px;
+    padding:20px 0px 0px 0px;
 }
