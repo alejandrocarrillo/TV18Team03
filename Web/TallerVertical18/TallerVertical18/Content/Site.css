@@ -39,16 +39,16 @@ h1{
 
 /* Style of the quotes at the end of the webpage*/
 .quote1 {
-    font-family: Garamond;
+    font-family: Arial;
     font-size: 18px;
-    padding: 20px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
 }
 
-.quote2{
-    font-family: Garamond;
+.quote2 {
+    font-family: Arial;
     font-size: 18px;
-    padding:20px 0px 0px 0px;
-
+    padding: 30px 0px 0px 0px;
+}
 
 .col-centered{
     margin: 0 auto;
