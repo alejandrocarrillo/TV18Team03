@@ -9,7 +9,7 @@ public class Item : MonoBehaviour{
 	public float benefit;
 
 	void Start(){
-
+		
 	}
 
 	void Update(){
