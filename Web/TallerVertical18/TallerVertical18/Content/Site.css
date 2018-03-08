@@ -770,6 +770,7 @@ ul.social-buttons {
         }
 
 
+
 #contact input, select, textarea {
     max-width: none;
 }
@@ -780,3 +781,8 @@ ul.social-buttons {
     left: 50%;
     
 }
+
+        ul{
+            tect-align="center"
+        }
+
