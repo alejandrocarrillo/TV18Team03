@@ -18,3 +18,7 @@ sysinfo.txt
 *.pidb
 *.booproj
 *.DS_store
+*.wav
+*.aiff
+*.mp3
+*.apk
