@@ -769,6 +769,20 @@ ul.social-buttons {
             background-color: #fed136;
         }
 
+
+
+#contact input, select, textarea {
+    max-width: none;
+}
+
+.centerImage{
+    
+    top: 50%;
+    left: 50%;
+    
+}
+
         ul{
             tect-align="center"
         }
+
