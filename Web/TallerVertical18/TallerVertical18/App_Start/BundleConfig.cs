@@ -26,6 +26,12 @@ namespace TallerVertical18
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/agency").Include(
+                "~/Scripts/jqBootstrapValidation*",
+                "~/Scripts/jqBootstrapValidation*",
+                "~/Scripts/contact_me*",
+                "~/Scripts/agency*"));
         }
     }
 }

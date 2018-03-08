@@ -8,8 +8,8 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<body style="padding: 0;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"  style="@if(ViewBag.Title != "Home Page"){@Html.Raw("background-color: #212529; padding-top:0; padding-bottom:0;")}">
         <div class="container">
             @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand js-scroll-trigger" })
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,23 +17,28 @@
                 <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                @if (ViewBag.Title == "Home Page")
+                {
+                    <ul class="navbar-nav text-uppercase mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                }
+                
+                
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -41,14 +46,30 @@
 
 <div class="container body-content">
     @RenderBody()
-    <hr/>
-    <footer class="text-center">
-        <p>&copy; @DateTime.Now.Year - TV Equipo 3 ISC | LAD</p>
-    </footer>
 </div>
+    <footer style="background-color: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">&copy; @DateTime.Now.Year - TV Equipo 3 ISC | LAD</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="#">ONU</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">Other resource</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/agency")
 @RenderSection("scripts", required: false)
 </body>
 </html>
