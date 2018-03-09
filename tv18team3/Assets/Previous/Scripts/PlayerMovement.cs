@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void loadScene2(){
+		print( this.sceneLoaded2);
 		if (this.sceneLoaded2 == false) {
 			SceneManager.LoadScene ("City3", LoadSceneMode.Additive);
 			this.sceneLoaded2 = true;
@@ -59,6 +60,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void loadScene3(){
+		print( this.sceneLoaded3);
 		if (this.sceneLoaded3 == false) {
 			SceneManager.LoadScene ("City2", LoadSceneMode.Additive);
 			this.sceneLoaded3 = true;
