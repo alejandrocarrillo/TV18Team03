@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -8,16 +9,24 @@ public class PlayerMovement : MonoBehaviour {
 	private bool walking;
 	private float speed;
 	private AudioSource footsteps;
+	private bool sceneLoaded2;
+	private bool sceneLoaded3;
 
 	// Use this for initialization
 	void Start () {
+		DontDestroyOnLoad (gameObject);
+
+		this.sceneLoaded2 = false;
+
+		this.sceneLoaded3 = false;
+
 		this.rb = GetComponent<Rigidbody> ();
 
 		this.footsteps = GetComponent<AudioSource> ();
 
 		this.walking = false;
 
-		this.speed = 150.0f;
+		this.speed = 1000.0f;
 	}
 	
 	// Update is called once per frame
@@ -40,5 +49,19 @@ public class PlayerMovement : MonoBehaviour {
 	public void isNotWalking(){
 		this.walking = false;
 		this.footsteps.Pause ();
+	}
+
+	public void loadScene2(){
+		if (this.sceneLoaded2 == false) {
+			SceneManager.LoadScene ("City3", LoadSceneMode.Additive);
+			this.sceneLoaded2 = true;
+		}
+	}
+
+	public void loadScene3(){
+		if (this.sceneLoaded3 == false) {
+			SceneManager.LoadScene ("City2", LoadSceneMode.Additive);
+			this.sceneLoaded3 = true;
+		}
 	}
 }
