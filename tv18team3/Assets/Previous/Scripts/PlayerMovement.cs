@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		this.walking = false;
 
-		this.speed = 50.0f;
+		this.speed = 500.0f;
 	}
 	
 	// Update is called once per frame
@@ -61,6 +61,13 @@ public class PlayerMovement : MonoBehaviour {
 		
 		SceneManager.LoadScene ("City2", LoadSceneMode.Additive);
 		this.sceneLoaded3 = true;
+
+	}
+
+	public void loadHouse(){
+
+		SceneManager.LoadScene ("House", LoadSceneMode.Single);
+		Destroy (gameObject);
 
 	}
 }

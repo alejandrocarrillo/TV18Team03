@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCondition : MonoBehaviour {
 
@@ -37,14 +38,22 @@ public class PlayerCondition : MonoBehaviour {
 			if (this.thirst > 0) {
 				this.thirst -= 10;
 			}
-			this.secondsAlive = 0;
-		}
-
-		if ((this.hunger <= 30 || this.thirst <= 30) && this.secondsAlive >= 10) {
-			if (this.health > 0) {
-				this.health -= 5;
+			if (this.hunger <= 30 && this.secondsAlive >= 10) {
+				if (this.health > 0) {
+					this.health -= 10;
+				}
+			}
+			if (this.hunger <= 30 && this.secondsAlive >= 10) {
+				if (this.health > 0) {
+					this.health -= 10;
+				}
 			}
 			this.secondsAlive = 0;
+		}
+			
+		if (this.health <= 0) {
+			SceneManager.LoadScene ("GameOver", LoadSceneMode.Single);
+			Destroy (gameObject);
 		}
 	}
 
@@ -148,6 +157,14 @@ public class PlayerCondition : MonoBehaviour {
 			this.fear = 100.0f;
 		} else {
 			this.fear = 25 * this.stalkers;
+		}
+	}
+
+	void onCollisionEnter(Collider other){
+		if(other.gameObject.name.StartsWith("Enemy")){
+			if (this.health > 0) {
+				this.health -= 10;
+			}
 		}
 	}
 }
