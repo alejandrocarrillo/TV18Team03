@@ -10,11 +10,15 @@ public class EnemyAI : MonoBehaviour {
 	private Vector3 dest;
 	private NavMeshAgent agent;
 
+	private PlayerCondition pc;
+
 	// Use this for initialization
 	void Start () {
 		target = GameObject.Find ("Player").transform;
 		agent = GetComponent<NavMeshAgent> ();
 		dest = agent.destination;
+
+		pc = GameObject.Find ("Player").GetComponent<PlayerCondition> ();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +26,7 @@ public class EnemyAI : MonoBehaviour {
 		if (Vector3.Distance (dest, target.position) < 10.0f) {
 			dest = target.position;
 			agent.destination = dest;
+			this.pc.stalkerFollowing ();
 		}
 	}
 }

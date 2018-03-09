@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 33869155519450936}
   - component: {fileID: 137636085955792086}
   - component: {fileID: 183399088117854632}
+  - component: {fileID: 64006147766245826}
   m_Layer: 0
   m_Name: Cloth
   m_TagString: Untagged
@@ -124,6 +125,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830456053676428}
   m_Mesh: {fileID: 4300006, guid: f42c52103db7b4c4f8e68a86a7807d3d, type: 3}
+--- !u!64 &64006147766245826
+MeshCollider:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1830456053676428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300006, guid: f42c52103db7b4c4f8e68a86a7807d3d, type: 3}
 --- !u!114 &114634355125296874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,7 +214,7 @@ Cloth:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830456053676428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_StretchingStiffness: 1
   m_BendingStiffness: 0
   m_UseTethers: 1

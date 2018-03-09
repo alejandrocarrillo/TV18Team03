@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		this.walking = false;
 
-		this.speed = 1000.0f;
+		this.speed = 50.0f;
 	}
 	
 	// Update is called once per frame
@@ -52,18 +52,15 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void loadScene2(){
-		print( this.sceneLoaded2);
-		if (this.sceneLoaded2 == false) {
-			SceneManager.LoadScene ("City3", LoadSceneMode.Additive);
-			this.sceneLoaded2 = true;
-		}
+		SceneManager.LoadScene ("City3", LoadSceneMode.Additive);
+		this.sceneLoaded2 = true;
+		
 	}
 
 	public void loadScene3(){
-		print( this.sceneLoaded3);
-		if (this.sceneLoaded3 == false) {
-			SceneManager.LoadScene ("City2", LoadSceneMode.Additive);
-			this.sceneLoaded3 = true;
-		}
+		
+		SceneManager.LoadScene ("City2", LoadSceneMode.Additive);
+		this.sceneLoaded3 = true;
+
 	}
 }
