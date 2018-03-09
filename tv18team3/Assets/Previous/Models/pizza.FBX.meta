@@ -1,23 +1,16 @@
 fileFormatVersion: 2
-guid: 6388cb6532358af4d945b325b9e4ed53
-timeCreated: 1520527979
+guid: f246682cf46e9b94c8f5b35285d4377e
+timeCreated: 1520577936
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Camera
-    100002: //RootNode
-    100004: Cube
-    400000: Camera
-    400002: //RootNode
-    400004: Cube
-    2000000: Camera
-    2100000: No Name
-    2300000: Cube
-    3300000: Cube
-    4300000: Cube
-    7400000: Default Take
-    9500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2100000: 'Material #2119'
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pizza
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -92,7 +85,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
