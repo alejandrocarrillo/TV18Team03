@@ -9,25 +9,41 @@ public class PlayerCondition : MonoBehaviour {
 	public float thirst,
 				 hunger,
 				 health,
+				 fear,
 				 secondsAlive;	
+
+	private int stalkers,
+				prStalkers;
 
 	// Use this for initialization
 	void Start () {
 		this.items = new List<GameObject> ();
 		this.secondsAlive = 0;
+		this.prStalkers = this.stalkers;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (this.prStalkers != this.stalkers) {
+			feelingFear ();
+			this.prStalkers = this.stalkers;
+		}
+
 		this.secondsAlive += Time.deltaTime;
 		if (this.secondsAlive >= 10) {
-			this.hunger -= 5;
-			this.thirst -= 10;
+			if (this.hunger > 0) {
+				this.hunger -= 5;
+			}
+			if (this.thirst > 0) {
+				this.thirst -= 10;
+			}
 			this.secondsAlive = 0;
 		}
 
 		if ((this.hunger <= 30 || this.thirst <= 30) && this.secondsAlive >= 10) {
-			this.health -= 5;
+			if (this.health > 0) {
+				this.health -= 5;
+			}
 			this.secondsAlive = 0;
 		}
 	}
@@ -118,6 +134,20 @@ public class PlayerCondition : MonoBehaviour {
 		this.health += health;
 		if (this.health > 100.0f) {
 			this.health = 100.0f;
+		}
+	}
+
+	// There is someone following you
+	public void stalkerFollowing(){
+		this.stalkers++;
+	}
+
+	// Feeling fear
+	private void feelingFear(){
+		if (this.stalkers > 4) {
+			this.fear = 100.0f;
+		} else {
+			this.fear = 25 * this.stalkers;
 		}
 	}
 }
