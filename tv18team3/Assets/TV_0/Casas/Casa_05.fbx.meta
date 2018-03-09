@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 25c60ee28ab352b4385e966878ba8da8
+timeCreated: 1520301277
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Chimney
+    100004: Door01
+    100006: HouseLamp
+    100008: HouseLevel
+    100010: HouseTop
+    100012: HouseWindow
+    100014: HouseWindow (1)
+    100016: HouseWindow (2)
+    100018: HouseWindow (3)
+    100020: HouseWindow (4)
+    100022: HouseWindow (5)
+    100024: HouseWindow (6)
+    100026: 'HouseWindow '
+    100028: HouseWindow  1
+    100030: HouseWindow  2
+    100032: HouseWindow  3
+    100034: HouseWindow  4
+    100036: HouseWindow  5
+    400000: //RootNode
+    400002: Chimney
+    400004: Door01
+    400006: HouseLamp
+    400008: HouseLevel
+    400010: HouseTop
+    400012: HouseWindow
+    400014: HouseWindow (1)
+    400016: HouseWindow (2)
+    400018: HouseWindow (3)
+    400020: HouseWindow (4)
+    400022: HouseWindow (5)
+    400024: HouseWindow (6)
+    400026: 'HouseWindow '
+    400028: HouseWindow  1
+    400030: HouseWindow  2
+    400032: HouseWindow  3
+    400034: HouseWindow  4
+    400036: HouseWindow  5
+    2100000: House02_Wall01
+    2100002: House02_Wood
+    2100004: House02_Metal
+    2100006: House02_Window
+    2100008: House02_Wall02
+    2300000: Chimney
+    2300002: Door01
+    2300004: HouseLamp
+    2300006: HouseLevel
+    2300008: HouseTop
+    2300010: HouseWindow
+    2300012: HouseWindow (1)
+    2300014: HouseWindow (2)
+    2300016: HouseWindow (3)
+    2300018: HouseWindow (4)
+    2300020: HouseWindow (5)
+    2300022: HouseWindow (6)
+    2300024: 'HouseWindow '
+    2300026: HouseWindow  1
+    2300028: HouseWindow  2
+    2300030: HouseWindow  3
+    2300032: HouseWindow  4
+    2300034: HouseWindow  5
+    3300000: Chimney
+    3300002: Door01
+    3300004: HouseLamp
+    3300006: HouseLevel
+    3300008: HouseTop
+    3300010: HouseWindow
+    3300012: HouseWindow (1)
+    3300014: HouseWindow (2)
+    3300016: HouseWindow (3)
+    3300018: HouseWindow (4)
+    3300020: HouseWindow (5)
+    3300022: HouseWindow (6)
+    3300024: 'HouseWindow '
+    3300026: HouseWindow  1
+    3300028: HouseWindow  2
+    3300030: HouseWindow  3
+    3300032: HouseWindow  4
+    3300034: HouseWindow  5
+    4300000: Chimney
+    4300002: Door01
+    4300004: HouseLamp
+    4300006: HouseLevel
+    4300008: HouseTop
+    4300010: HouseWindow
+    4300012: HouseWindow (1)
+    4300014: HouseWindow (2)
+    4300016: HouseWindow (3)
+    4300018: HouseWindow (4)
+    4300020: HouseWindow (5)
+    4300022: HouseWindow (6)
+    4300024: 'HouseWindow '
+    4300026: 'HouseWindow '
+    4300028: 'HouseWindow '
+    4300030: 'HouseWindow '
+    4300032: 'HouseWindow '
+    4300034: 'HouseWindow '
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
