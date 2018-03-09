@@ -10,7 +10,8 @@ Shader "TSF/Base1"
 		[MaterialToggle(_COLOR_ON)] _TintColor ("Enable Color Tint", Float) = 0 	//4
 		_Color ("Base Color", Color) = (1,1,1,1)									//5	
 		[MaterialToggle(_VCOLOR_ON)] _VertexColor ("Enable Vertex Color", Float) = 0//6        
-		_Brightness ("Brightness 1 = neutral", Float) = 1.0							//7	
+		_Brightness ("Brightness 1 = neutral", Float) = 1.0	
+
     }
    
     Subshader 
@@ -38,6 +39,7 @@ Shader "TSF/Base1"
                 #if _TEX_ON
                 sampler2D _MainTex;
 				half4 _MainTex_ST;
+
 				#endif
 				
                 struct appdata_base0 
@@ -72,6 +74,7 @@ Shader "TSF/Base1"
 
               	sampler2D _ToonShade;
                 fixed _Brightness;
+
                 
                 #if _COLOR_ON
                 fixed4 _Color;
@@ -91,6 +94,10 @@ Shader "TSF/Base1"
 					#else
 					return  toonShade;
 					#endif
+
+				
+
+
                 }
             ENDCG
         }
